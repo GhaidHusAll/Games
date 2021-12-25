@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/androidCODES/ThirdParty_GHH/app/src/main/res/layout/activity_details.xml" value="0.1838768115942029" />
+        <entry key="..\:/androidCODES/ThirdParty_GHH/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/androidCODES/ThirdParty_GHH/app/src/main/res/layout/item.xml" value="0.1082427536231884" />
+        <entry key="..\:/androidCODES/ThirdParty_GHH/app/src/main/res/layout/motion_scene.xml" value="0.1" />
+        <entry key="..\:/androidCODES/ThirdParty_GHH/app/src/main/res/layout/test.xml" value="0.1484375" />
+        <entry key="..\:/androidCODES/ThirdParty_GHH/app/src/main/res/menu/main_menu.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

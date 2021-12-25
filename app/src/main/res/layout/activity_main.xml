@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11121E"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Space
+        android:id="@+id/Space"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Space"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/carter_one"
+            android:text="New This Year"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainRVNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Space
+            android:id="@+id/Space2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainRVNew" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/carter_one"
+            android:text="Before 2021"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainRV2Old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:id="@+id/Space3"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainRVNew" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/carter_one"
+            android:text="Games"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainRV3All"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/llProgress"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+    <com.iitr.kaishu.nsidedprogressbar.NSidedProgressBar
+        android:id="@+id/NSidedProgressBar"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        app:nsidedProg_baseSpeed="5"
+        app:nsidedProg_clockwise="true"
+        app:nsidedProg_sideCount="6"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
